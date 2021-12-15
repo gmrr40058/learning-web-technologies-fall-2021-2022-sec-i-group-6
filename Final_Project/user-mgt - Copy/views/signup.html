@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HomePage</title>
+  <link rel="stylesheet" type="text/css" href="../css/signin.css">
+</head>
+<body >
+        <form name="myForm" action="../controller/signupcheck.php" onsubmit="return validateForm()" method="post">
+
+        <div class="registration-form">
+        <h1>SIGNUP FORM</h1>
+
+         <p>User Name:</p>
+                        <input type="text" placeholder="Username" name="username"value="" id="uname">
+
+         <p>Email:</p>
+                       <input type="email" placeholder="email" name="email" value="" id="email" >
+
+         <p>Password:</p>
+                      <input type="password" placeholder="Password" name="password" onkeyup='check();' value="" id="pass" >
+         
+         <p>Confirm Password:</p>
+                      <input type="password" placeholder="confirmPassword" id="con_password" name="confirm_password"  onkeyup='check();' value=""  >
+          <br>
+         <p id="one"></p>
+         <input  class="btn" type="submit" name="submit"value="SIGN UP">
+          
+          </div>
+
+
+ 
+        </form>
+<script src="../js/signup.js"></script>
+</body>
+</html>
